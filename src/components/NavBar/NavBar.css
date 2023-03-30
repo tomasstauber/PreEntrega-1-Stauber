@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+    height: 60px;
+    padding: 15px;
+
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+}
