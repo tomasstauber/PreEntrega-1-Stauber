@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.cardProd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 28rem;
+    width: 23rem;
+    padding: 15px;
+    border: 2px solid black;
+    font-family: righteous, sans-serif;
+}
+
+.cardProd img{
+    width: 20rem;
+    height: auto;
+}
