@@ -1,23 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
-
-
-.cardProd{
+.itemContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 28rem;
+    height: auto;
     width: 23rem;
     padding: 15px;
     border: 2px solid black;
     border-radius: 10px;
     background-color: rgb(240, 240, 240);
     font-family: exo, sans-serif;
-}
-
-.cardProd img{
-    width: 20rem;
-    height: auto;
-    max-height: 20rem;
-    object-fit: contain;
 }

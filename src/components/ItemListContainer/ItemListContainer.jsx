@@ -12,8 +12,7 @@ const ItemListContainer = () => {
             .catch(error => console.error(error))
     }, [])
     return (
-        <div>
-            <h2>Productos</h2>
+        <div className='divPrincipal'>
             <ItemList productos={productos}/>
         </div>
     )

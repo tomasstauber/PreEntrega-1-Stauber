@@ -6,7 +6,7 @@ const NavBar = () => {
         <header>
             <h1>GreenHealth</h1>
 
-            <nav>
+            <nav className='navBar'>
                 <ul>
                     <li>Cultivo</li>
                     <li>Sistemas Automáticos</li>
