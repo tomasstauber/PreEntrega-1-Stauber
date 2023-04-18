@@ -6,12 +6,18 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-      <>
-        <NavBar/>
-        <ItemListContainer/>
-        <ItemDetailContainer/>
-      </>
-    );
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path='/' element= {ItemListContainer} />
+          <Route path='/categoria/:cat' element={ItemListContainer} />
+          <Route path='/item/:id' element={ItemDetailContainer} />
+        </Routes>
+      </BrowserRouter>
+      <ItemDetailContainer />
+    </>
+  );
 }
 
 export default App;
