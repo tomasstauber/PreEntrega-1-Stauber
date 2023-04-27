@@ -10,7 +10,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: green;
+    background-color: rgb(14, 104, 14);
     height: 80px;
     padding: 15px;
     font-family: righteous, sans-serif;
@@ -21,4 +21,16 @@ li {
     margin: 10px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.linktitulo{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
 }
