@@ -53,7 +53,7 @@ const Checkout = () => {
     }
 
     return (
-        <div>
+        <div className='checkout'>
             <h2>Checkout</h2>
             <form onSubmit={handleForm}>
                 {carrito.map((producto) => (
@@ -67,33 +67,39 @@ const Checkout = () => {
                 <div>
                     <p>El total de la compra es de $ {totalCompra} </p>
                 </div>
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
-                </div>
+                <div className='camposForm'>
+                    <div>
+                        <label>
+                            Nombre <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                        </label>
+                    </div>
 
-                <div>
-                    <label>Apellido</label>
-                    <input type="text" value={apellido} onChange={(e) => setApellido(e.target.value)} />
-                </div>
+                    <div>
+                        <label>
+                            Apellido <input type="text" value={apellido} onChange={(e) => setApellido(e.target.value)} />
+                        </label>
+                    </div>
 
-                <div>
-                    <label>Teléfono</label>
-                    <input type="text" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
-                </div>
+                    <div>
+                        <label>
+                            Teléfono <input type="text" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
+                        </label>
+                    </div>
 
-                <div>
-                    <label>Email</label>
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                </div>
+                    <div>
+                        <label>
+                            Email <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        </label>
+                    </div>
 
-                <div>
-                    <label>Confirme su email</label>
-                    <input type="email" value={emailCheck} onChange={(e) => setEmailCheck(e.target.value)} />
+                    <div>
+                        <label>
+                            Confirme su email <input type="email" value={emailCheck} onChange={(e) => setEmailCheck(e.target.value)} />
+                        </label>
+                    </div>
+                    {error && <p> {error} </p>}
+                    <button type='submit'>Finalizar Compra</button>
                 </div>
-
-                {error && <p> {error} </p>}
-                <button type='submit'>Finalizar Compra</button>
             </form>
             {
                 ordenId && (

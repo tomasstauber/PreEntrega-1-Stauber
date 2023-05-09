@@ -1,0 +1,18 @@
+.checkout{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.camposForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.camposForm button{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(14, 104, 14);
+    border: none;
+}
